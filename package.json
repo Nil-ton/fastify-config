@@ -6,7 +6,8 @@
     "test": "tsx watch --test src/test.ts",
     "dev": "tsx watch src/app.ts",
     "create-entity": "tsx cli/entity.ts",
-    "create-useCase": "tsx cli/useCase.ts"
+    "create-useCase": "tsx cli/useCase.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
