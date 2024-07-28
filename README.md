@@ -31,3 +31,8 @@ npm run create-useCase [nome do caso de uso]
 ```
 npm test
 ```
+
+# Build
+```
+npm run build
+```
