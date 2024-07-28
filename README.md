@@ -27,7 +27,7 @@ npm run create-entity [nome da entidade]
 npm run create-useCase [nome do caso de uso]
 ```
 
-# Iniciar test
+# Teste
 ```
 npm test
 ```
