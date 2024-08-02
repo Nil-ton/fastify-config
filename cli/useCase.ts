@@ -33,9 +33,10 @@ const fileContentControllerFile = `
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { ${fileName}UseCase } from '../useCases/${fileName}UseCase'
 
-export function ${fileName}Controller(req: FastifyRequest, reply: FastifyReply) {
+export async function ${fileName}Controller(req: FastifyRequest, reply: FastifyReply) {
     const ${fileName.toLowerCase()}UseCase = new ${fileName}UseCase();
-    return ${fileName.toLowerCase()}UseCase.execute();
+    const useCase = await ${fileName.toLowerCase()}UseCase.execute();
+    return reply.send(useCase)
 }
 `;
 
